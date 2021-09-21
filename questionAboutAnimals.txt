@@ -1,0 +1,70 @@
+{
+    question: "What type of animal is a seahorse?",
+    questionNumber: 1,
+    choices: [Crustacean, Arachnid, Fish, Shell],
+    correctAnswer: 2
+}
+
+{
+    question: "Which of the following dog breeds is the smallest?",
+    questionNumber: 2,
+    choices: [Dachshund, Poodle, Pomeranian, Chihuahua],
+    correctAnswer: 2
+}
+
+3. What color are zebras?
+
+A) White with black stripes
+B) Black with white stripes
+C) Both of the above
+D) None of the above
+
+4. What existing bird has the largest wingspan?
+
+A) Stork
+B) Swan
+C) Condor
+D) Albatross
+
+
+5. What is the biggest animal that has ever lived?
+
+A) Blue whale
+B) African elephant
+C) Apatosaurus (aka Brontosaurus)
+D) Spinosaurus
+
+6. Fill in the blank: Out of these pets, there are the most pet _____ in the U.S.
+
+A) Birds
+B) Cats
+C) Dogs
+D) Horses
+
+7. Which of these animals lives the longest?
+
+A) Ocean quahog (clam)
+B) Red sea urchin
+C) Galapagos tortoise
+D) Rougheye rockfish
+
+8. What are female elephants called?
+
+A) Mares
+B) Sows
+C) Cows
+D) Dams
+
+9. Which of the following animals sleeps standing up?
+
+A) Gorillas
+B) Flamingos
+C) Hedgehogs
+D) Ravens
+
+10. What is the fastest water animal?
+
+A) Porpoise
+B) Sailfish
+C) Flying fish
+D) Tuna
