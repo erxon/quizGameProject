@@ -1,0 +1,23 @@
+{
+"results": [
+{
+    "question": "What type of animal is a seahorse?",
+    "questionNumber": 1,
+    "choices": ["Crustacean", "Arachnid", "Fish", "Shell"],
+    "correctAnswer": 2
+},
+
+{
+    "question": "Which of the following dog breeds is the smallest?",
+    "questionNumber": 2,
+    "choices": ["Dachshund", "Poodle", "Pomeranian", "Chihuahua"],
+    "correctAnswer": 3
+},
+{
+    "question": "What color are zebras?",
+    "questionNumber": 3,
+    "choices": ["White with black stripes", "Black with white stripes", "Both of the above", "None of the above"],
+    "correctAnswer": 1
+}
+]
+}

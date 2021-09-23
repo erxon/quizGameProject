@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Question #<%= questionNumber %></h1>
+    <h3><%= question %></h3>
+    <form class="" action="/answer" method="post">
+      <% choices.forEach(function(choice){ %>
+        <div class="choices">
+          <input type="checkbox" value="<%= choice %>">
+          <p><%= choice %></p>
+        </div>
+        <br>
+
+      <% }) %>
+    </form>
+
+  </body>
+</html>
