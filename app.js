@@ -1,13 +1,18 @@
 const express = require("express");
+const bodyParser = require("body-parser");
 const fs = require("fs");
 const app = express();
 
-app.set("view engine", "ejs")
+app.use(express.static("public"));
+app.use(bodyParser.urlencoded({extended: true}));
+app.set("view engine", "ejs");
 
+let chosenCategory = "";
 let choices = [];
 let score = 0;
 let questionIndex = 0;
-let correctAnswer = 0;
+
+let correctAnswer = "";
 
 app.get("/", function(req, res){
     res.sendFile(__dirname + "/index.html");
@@ -15,14 +20,34 @@ app.get("/", function(req, res){
 
 app.get("/question/:category", function(req, res){
   //questions: https://wehavekids.com/education/Multiple-Choice-Quiz-How-well-do-you-know-animals-suitable-for-kids
-  fs.readFile(req.params.category+".txt", function(err, data){
+
+  chosenCategory = req.params.category;
+  fs.readFile(chosenCategory+".txt", function(err, data){
     let item = JSON.parse(data);
-    let questionNumber = item.results[0].questionNumber;
-    let question = item.results[0].question;
-    choices = item.results[0].choices;
-    correctAnswer = item.results[0].correctAnswer;
-    res.render("mainGame", {questionNumber: questionNumber, question: question, choices: choices});
+    const listOfCorrectAnswers = [];
+    if(questionIndex < item.results.length){
+      let questionNumber = item.results[questionIndex].questionNumber;
+      let question = item.results[questionIndex].question;
+
+      choices = item.results[questionIndex].choices;
+      correctAnswer = choices[item.results[questionIndex].correctAnswer];
+      listOfCorrectAnswers.push(correctAnswer);
+
+      res.render("mainGame", {questionNumber: questionNumber, question: question, choices: choices});
+    } else{
+      console.log(score);
+      console.log(listOfCorrectAnswers);
+    }
   });
+});
+app.post("/answer", function(req, res){
+  const answer = req.body.checkbox;
+
+  if(answer === correctAnswer){
+    score+=1;
+  }
+  questionIndex+=1;
+  res.redirect("/question/"+chosenCategory);
 });
 
 app.listen(3000, function(){

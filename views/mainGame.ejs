@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <title></title>
   </head>
+  <link rel="stylesheet" href="/css/styles.css">
   <body>
     <h1>Question #<%= questionNumber %></h1>
     <h3><%= question %></h3>
-    <form class="" action="/answer" method="post">
+    <form action="/answer" method="post">
       <% choices.forEach(function(choice){ %>
         <div class="choices">
-          <input type="checkbox" value="<%= choice %>">
+          <input type="checkbox" name="checkbox" value="<%= choice %>" onchange="this.form.submit()">
           <p><%= choice %></p>
         </div>
         <br>
-
       <% }) %>
     </form>
 
