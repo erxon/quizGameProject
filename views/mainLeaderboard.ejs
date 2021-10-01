@@ -1,0 +1,9 @@
+<%- include("partials/heading") -%>
+  <h1>Leaderboard</h1>
+  <ol>
+    <% players.forEach(function(player){ %>
+      <li><%= player.name %> - <%= player.score %></li>
+    <% }); %>
+  </ol>
+
+<%- include("partials/footer") -%>

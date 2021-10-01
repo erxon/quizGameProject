@@ -1,0 +1,23 @@
+{
+"results": [
+{
+    "question": "The grasslands called 'Pampas' are found in which among the following regions?",
+    "questionNumber": 1,
+    "choices": ["South Africa", "South America", "Australia", "Europe"],
+    "correctAnswer": 1
+},
+
+{
+    "question": "Ob river flows in the following region?",
+    "questionNumber": 2,
+    "choices": ["Africa , Zaire", "Asia, Pakistan", "Asia, Russia", "USA, Canada"],
+    "correctAnswer": 2
+},
+{
+    "question": "world’s longest seawall is located in:",
+    "questionNumber": 3,
+    "choices": ["China", "South Korea", "North Korea", "Japan"],
+    "correctAnswer": 1
+}
+]
+}

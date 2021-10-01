@@ -1,11 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <link rel="stylesheet" href="/css/styles.css">
-  <body>
+<%- include("partials/heading") -%>
     <h1>Question #<%= questionNumber %></h1>
     <h3><%= question %></h3>
     <form action="/answer" method="post">
@@ -17,6 +10,4 @@
         <br>
       <% }) %>
     </form>
-
-  </body>
-</html>
+  <%- include("partials/footer") -%>

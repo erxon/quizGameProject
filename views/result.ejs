@@ -1,0 +1,11 @@
+<%- include("partials/heading") -%>
+  <h1>Score: <%= score %>/<%= answers.length %></h1>
+  <h3>Correct answers</h3>
+  <ol>
+    <% answers.forEach(function(answer){ %>
+      <li><%= answer %></li>
+    <% }); %>
+  </ol>
+  <a href="/">Home</a>
+  <a href="/leaderboardCategory">Leaderboard</a>
+<%- include("partials/footer") -%>

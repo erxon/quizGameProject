@@ -1,0 +1,23 @@
+{
+"results": [
+{
+    "question": "Which actress stars in the film 'Mean Girls'?",
+    "questionNumber": 1,
+    "choices": ["Kate Hudson", "Kirsten Dunst", "Lindsay Lohan", "Hilary Duff"],
+    "correctAnswer": 2
+},
+
+{
+    "question": "Which star was in 'Lara Croft Tomb Raider' and 'Gone in Sixty Seconds'?",
+    "questionNumber": 2,
+    "choices": ["Julia Stiles", "Angelina Jolie", "Alexa Vega", "Jena Malone"],
+    "correctAnswer": 1
+},
+{
+    "question": "Which actress appeared in both 'A Cinderella Story' and 'Cheaper By The Dozen'?",
+    "questionNumber": 3,
+    "choices": ["Kate Winslet", "Kirsten Dunst", "Emily Browning", "Hilary Duff"],
+    "correctAnswer": 3
+}
+]
+}
